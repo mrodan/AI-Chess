@@ -1,0 +1,58 @@
+.board {
+    width: 450px;
+    margin: 0 auto;
+
+}
+
+.messages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 100px;
+}
+
+.checkWarn {
+    width: 100px;
+    padding: 20px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 60px;
+    border-radius: 5px;
+}
+.settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+.depthRange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.depthRange label {
+    font-weight: 500;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 5px;
+}
+
+.depthRange div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#depthValue {
+    margin-left: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}

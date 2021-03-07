@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="deps/chessboardjs/css/chessboard-0.3.0.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="messages">
+        <div class="checkWarn">CHECK</div>
+    </div>
+    <div id="board" class="board"></div>
+    <div class="settings">
+        <div>
+            <label for="algorithm">Choose an algorithm: </label>
+            <select name="algorithm" id="algorithm">
+                <option value="moveAhead">Best Move Ahead</option>
+                <option value="minimax">Minimax</option>
+                <option value="minimaxPruning">Minimax with AB Pruning</option>
+                <option value="minimaxPruningAndPosition">Minimax with Pruning and position heuristics</option>
+            </select>
+        </div>
+        <div class="depthRange" style="display: none;">
+            <label for="treeDepth">Select Depth for Minimax:</label>
+            
+            <div><input id="treeDepth" type="range" min="1" max="10" value="3" step="1"><span id="depthValue">3</span></div>
+            
+        </div>
+        <div style='padding: 20px;'> <strong>Time: </strong> <span id='time'></span></div>
+        <div style='padding: 20px;'> <strong>Positions Evaluated: </strong> <span id='counter'>0</span></div>
+    </div>
+    
+
+   
+    </div>
+    </div>
+    <!-- Deps -->
+    <script src="deps/jquery/jquery-3.2.1.min.js"></script>
+    <script src="deps/chessboardjs/js/chess.js"></script>
+    <script src="deps/chessboardjs/js/chessboard-0.3.0.js"></script>
+    <script src="script.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>
